@@ -14,22 +14,21 @@
     <!--Menu -->
 
     <section class="nav">
-        <div class="menu1" id="menu1">
+        <nav class="menu1" id="menu1">
             <img id="menu-img" src="" alt="">
-        <ul>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Gêneros</a></li>
-            <li><a href="">Criadores</a></li>
-        </ul>
-        </div>
-        <div class="menu2" id="menu2">
-            <img id="menu-img" src="" alt="">
-        <ul>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Gêneros</a></li>
-            <li><a href="">Criadores</a></li>
-        </ul>
-        </div>
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Gêneros</a></li>
+                <li><a href="">Criadores</a></li>
+            </ul>
+        </nav>
+        <nav class="menu2" id="menu2">
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Gêneros</a></li>
+                <li><a href="">Criadores</a></li>
+            </ul>
+        </nav>
     </section>
 
     <!-- Geral -->
@@ -42,7 +41,7 @@
             <div class="destaques">
             <!-- carousel com Bootstrap 5-->
             <!-- Carousel -->
-            <h1>Destaque do Mês de Junho</h1>
+            <h1>Destaques de 2025</h1>
             <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
                 <!-- Indicators/dots -->
@@ -50,18 +49,22 @@
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
                 </div>
             
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner position-relative bottom-0">
                 <div class="carousel-item active">
-                    <img src="Images/Hollow-Knight-Banner.jpg" alt="Los Angeles" class="d-block w-100 ">
+                    <img src="Images/Blue-Prince2.png" alt="Blue Prince" class="d-block w-100 ">
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/Hollow-Knight-Banner.jpg" alt="Chicago" class="d-block w-100">
+                    <img src="Images/Drop-Duchy.png" alt="Drop Duchy" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="Images/Hollow-Knight-Banner.jpg" alt="New York" class="d-block w-100">
+                    <img src="Images/Wanderstop.png" alt="Wanderstop" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/A-Game-About-Digging-a-Hole.png" alt="A Game About Digging a Hole" class="d-block w-100">
                 </div>
                 </div>
             
@@ -122,32 +125,80 @@
                         <button type="button" data-bs-target="#carouselAcao" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#carouselAcao" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselAcao" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselAcao" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselAcao" data-bs-slide-to="4"></button>
                     </div>
         
                     <!-- Carrossel -->
                     <div class="carousel-inner">
                         <!-- Card 1 -->
                         <div class="carousel-item active">
-                            <div class="card text-center">
-                                <h3>Jogo 1</h3>
-                                <p>Descrição breve do Jogo 1</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsAcao1')">Ver Mais</button>
+                            <div id="Celeste" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Celeste-Banner.png" alt="">
+                                    <img src="Images/Celeste-Banner.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Celeste</h3>
+                                    <p>Celeste é um aclamado jogo de plataforma 2D que segue a jornada de Madeline enquanto ela escala a montanha Celeste, enfrentando desafios físicos e emocionais. Com controles precisos, narrativa envolvente e trilha sonora marcante, o jogo aborda temas como ansiedade e autoconhecimento.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsAcao1')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 2</h3>
-                                <p>Descrição breve do Jogo 2</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsAcao2')">Ver Mais</button>
+                            <div id="ItTakesTwo" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/It-Takes-Two-Banner.png" alt="">
+                                    <img src="Images/It-Takes-Two-Banner.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>It Takes Two</h3>
+                                    <p>It Takes Two é um jogo de plataforma e aventura cooperativo que segue a história de Cody e May, um casal prestes a se divorciar que é transformado em bonecos por um feitiço. Para retornarem aos seus corpos humanos, eles devem trabalhar juntos, enfrentando desafios criativos e variados que exigem cooperação constante. O jogo é conhecido por sua jogabilidade inovadora e narrativa envolvente</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsAcao2')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 3</h3>
-                                <p>Descrição breve do Jogo 3</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsAcao3')">Ver Mais</button>
+                            <div id="OneShot" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/One-Shot-Banner.png" alt="">
+                                    <img src="Images/One-Shot-Banner.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>One Shot</h3>
+                                    <p>OneShot é um jogo de aventura com elementos de quebra-cabeça que segue a jornada de Niko, uma criança com aparência felina, em um mundo misterioso sem sol. O jogo é conhecido por quebrar a quarta parede, envolvendo o jogador diretamente na narrativa e nos desafios, criando uma experiência única e emocional.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsAcao3')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4-->
+                        <div class="carousel-item">
+                            <div id="Stray" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Stray-Banner.png" alt="">
+                                    <img src="Images/Stray-Banner.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Stray</h3>
+                                    <p>Stray é um jogo de aventura em terceira pessoa onde você controla um gato de rua em uma cidade cyberpunk habitada por robôs. Acompanhado por um drone chamado B-12, o jogador explora ambientes detalhados, resolve quebra-cabeças e evita ameaças como os Zurks e Sentinelas, enquanto busca retornar à superfície.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsAcao4')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5-->
+                        <div class="carousel-item">
+                            <div id="TheHeadliners" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/The-Headliners.png" alt="">
+                                    <img src="Images/The-Headliners.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>The Headliners</h3>
+                                    <p>The Headliners é um jogo de horror cooperativo onde de 1 a 8 jornalistas audaciosos exploram uma Nova York invadida por criaturas mortais, buscando capturar imagens espetaculares e sobreviver para fazer as manchetes. O jogo combina exploração tensa, elementos de sobrevivência e trabalho em equipe.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsAcao5')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -166,6 +217,7 @@
                 <!-- Divs de detalhes -->
                 <div id="detailsAcao1" class="details" style="display: none;">
                     <h3>Detalhes do Jogo 123</h3>
+                    <iframe  src="https://www.youtube.com/embed/70d9irlxiB4?si=8KnzDBHWtGtxiFdD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <p>Informações adicionais sobre o Jogo 1.</p>
                     <button class="btn btn-secondary" onclick="hideDetails('detailsAcao1')">Fechar</button>
                 </div>
@@ -179,10 +231,20 @@
                     <p>Informações adicionais sobre o Jogo 3.</p>
                     <button class="btn btn-secondary" onclick="hideDetails('detailsAcao3')">Fechar</button>
                 </div>
+                <div id="detailsAcao4" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 321</h3>
+                    <p>Informações adicionais sobre o Jogo 3.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsAcao4')">Fechar</button>
+                </div>
+                <div id="detailsAcao5" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 321</h3>
+                    <p>Informações adicionais sobre o Jogo 3.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsAcao5')">Fechar</button>
+                </div>
             </div>
         
             <!-- Categoria 2: Quebra-Cabeça -->
-            <div class="jogo2">
+            <div class="jogo1">
                 <h1>Quebra-Cabeça</h1>
                 <div id="carouselQuebraCabeca" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicadores -->
@@ -190,32 +252,110 @@
                         <button type="button" data-bs-target="#carouselQuebraCabeca" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#carouselQuebraCabeca" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselQuebraCabeca" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselQuebraCabeca" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselQuebraCabeca" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselQuebraCabeca" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#carouselQuebraCabeca" data-bs-slide-to="6"></button>
                     </div>
         
                     <!-- Carrossel -->
                     <div class="carousel-inner">
                         <!-- Card 1 -->
                         <div class="carousel-item active">
-                            <div class="card text-center">
-                                <h3>Jogo 1</h3>
-                                <p>Descrição breve do Jogo 1</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsQuebra1')">Ver Mais</button>
+                            <div id="BluePrince" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Blue-Prince.png" alt="">
+                                    <img src="Images/Blue-Prince.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Blue Prince</h3>
+                                    <p>Blue Prince é um jogo de quebra-cabeça roguelike onde o jogador assume o papel de Simon, um jovem que deve explorar uma mansão encantada em constante mudança para descobrir a misteriosa 46ª sala e reivindicar sua herança. O jogo combina elementos de construção de baralho, resolução de enigmas e exploração estratégica, desafiando os jogadores a planejar cuidadosamente seus movimentos em um tabuleiro de 5x9 salas que se reorganiza a cada dia.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsQuebra1')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 2</h3>
-                                <p>Descrição breve do Jogo 2</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsQuebra2')">Ver Mais</button>
+                            <div id="ChantsOfSennaar" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/.png" alt="">
+                                    <img src="Images/.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Chants of Sennaar</h3>
+                                    <p>Inspirado no mito da Torre de Babel, você joga como o Viajante, explorando uma torre habitada por diferentes povos que não se comunicam entre si. O objetivo é decifrar línguas desconhecidas e restaurar a comunicação entre os habitantes, resolvendo enigmas linguísticos e culturais. O jogo combina elementos de stealth e puzzles em um ambiente artisticamente estilizado.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsQuebra2')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 3</h3>
-                                <p>Descrição breve do Jogo 3</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsQuebra3')">Ver Mais</button>
+                            <div id="Firework" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Firework.png" alt="">
+                                    <img src="Images/Firework.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Firework</h3>
+                                    <p>Firework é um jogo de terror e quebra-cabeça que se passa em uma vila montanhosa remota na China. Após um incêndio acidental em um funeral, a polícia reabre um caso de massacre encerrado anteriormente. O jogador assume o papel de Lin Lixun, um policial novato que se envolve na investigação, desvendando segredos sombrios e eventos sobrenaturais à medida que a história se desenrola.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsQuebra3')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4-->
+                        <div class="carousel-item">
+                            <div id="ThereIsNoGame" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/There-Is-No-Game.jpg" alt="">
+                                    <img src="Images/There-Is-No-Game.jpg" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>There Is No Game: Wrong Dimension</h3>
+                                    <p>Apesar do título, "There Is No Game" é uma experiência interativa que quebra a quarta parede, desafiando as convenções dos jogos tradicionais. Você interage com uma interface que insiste que não há jogo, enquanto resolve puzzles criativos e humorísticos que exploram diferentes gêneros e estilos gráficos.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsQuebra4')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5-->
+                        <div class="carousel-item">
+                            <div id="Unheard" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Unheard.png" alt="">
+                                    <img src="Images/Unheard.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Unheard</h3>
+                                    <p>Unheard é um jogo de investigação onde você assume o papel de um detetive que utiliza uma tecnologia inovadora para ouvir conversas passadas em diferentes ambientes. Sem imagens visuais, você deve identificar personagens, reconstruir eventos e resolver mistérios apenas através de diálogos e sons ambientes. A jogabilidade única desafia sua capacidade de dedução auditiva.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsQuebra5')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6-->
+                        <div class="carousel-item">
+                            <div id="Antichamber" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Antichamber.png" alt="">
+                                    <img src="Images/Antichamber.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Antichamber</h3>
+                                    <p>Antichamber é um jogo de quebra-cabeça em primeira pessoa que desafia as leis da física e a lógica tradicional. Ambientado em um mundo surreal, você deve navegar por ambientes que se transformam de maneiras inesperadas, exigindo pensamento lateral e adaptação constante para resolver enigmas complexos.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsQuebra6')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 7-->
+                        <div class="carousel-item">
+                            <div id="BabaIsYou" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Baba-Is-You.png" alt="">
+                                    <img src="Images/Baba-Is-You.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Baba Is You</h3>
+                                    <p>Baba Is You é um jogo de quebra-cabeça em que as regras do jogo são blocos que você pode mover e reorganizar. Você controla Baba, uma pequena criatura, e precisa resolver puzzles alterando frases como "Baba Is You" ou "Wall Is Stop" para mudar como o mundo funciona. Ao manipular essas regras, você transforma paredes em passagens, inimigos em aliados e muito mais. O jogo é conhecido por sua mecânica criativa, que exige raciocínio lógico e experimentação constante para vencer mais de 200 níveis desafiadores</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsQuebra7')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -247,10 +387,30 @@
                     <p>Informações adicionais sobre o Jogo 3.</p>
                     <button class="btn btn-secondary" onclick="hideDetails('detailsQuebra3')">Fechar</button>
                 </div>
+                <div id="detailsQuebra4" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 4</h3>
+                    <p>Informações adicionais sobre o Jogo 4.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsQuebra4')">Fechar</button>
+                </div>
+                <div id="detailsQuebra5" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 5</h3>
+                    <p>Informações adicionais sobre o Jogo 5.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsQuebra5')">Fechar</button>
+                </div>
+                <div id="detailsQuebra6" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 6</h3>
+                    <p>Informações adicionais sobre o Jogo 6.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsQuebra6')">Fechar</button>
+                </div>
+                <div id="detailsQuebra7" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 7</h3>
+                    <p>Informações adicionais sobre o Jogo 7.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsQuebra7')">Fechar</button>
+                </div>
             </div>
 
             <!-- Categoria 3: Simulação -->
-            <div class="jogo3">
+            <div class="jogo1">
                 <h1>Simulação</h1>
                 <div id="carouselSimulacao" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicadores -->
@@ -258,32 +418,110 @@
                         <button type="button" data-bs-target="#carouselSimulacao" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#carouselSimulacao" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselSimulacao" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselSimulacao" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselSimulacao" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselSimulacao" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#carouselSimulacao" data-bs-slide-to="6"></button>
                     </div>
         
                     <!-- Carrossel -->
                     <div class="carousel-inner">
                         <!-- Card 1 -->
                         <div class="carousel-item active">
-                            <div class="card text-center">
-                                <h3>Jogo 1</h3>
-                                <p>Descrição breve do Jogo 1</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsSimulacao1')">Ver Mais</button>
+                            <div id="Beholder" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Beholder.png" alt="">
+                                    <img src="Images/Beholder.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Beholder</h3>
+                                    <p>Beholder coloca o jogador no papel de um síndico de um prédio em um estado totalitário. Sua missão é espionar os inquilinos, reportar atividades suspeitas e tomar decisões que podem afetar a vida de todos. O jogo explora temas de vigilância, moralidade e escolhas difíceis em um ambiente opressor.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSimulacao1')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 2</h3>
-                                <p>Descrição breve do Jogo 2</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsSimulacao2')">Ver Mais</button>
+                            <div id="FastFoodSimulator" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Fast-Food-Simulator.png" alt="">
+                                    <img src="Images/Fast-Food-Simulator.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Fast Food Simulator</h3>
+                                    <p>Fast Food Simulator coloca o jogador no comando de um restaurante de fast-food, onde é possível cozinhar, montar e servir diversos pratos. O jogo enfatiza a gestão eficiente do tempo e dos recursos para satisfazer os clientes e expandir o negócio.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSimulacao2')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 3</h3>
-                                <p>Descrição breve do Jogo 3</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsSimulacao3')">Ver Mais</button>
+                            <div div="PapersPlease" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Papers-Please.png" alt="">
+                                    <img src="Images/papers-Please.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Papers, Please</h3>
+                                    <p>Em Papers, Please, você assume o papel de um inspetor de imigração na fictícia nação comunista de Arstotzka. Sua tarefa é controlar a entrada de pessoas no país, verificando documentos e tomando decisões morais que afetam o destino dos personagens e o seu próprio. O jogo é conhecido por sua narrativa envolvente e dilemas éticos profundos.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSimulacao3')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="carousel-item">
+                            <div div="StardewValley" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Stardew-Valley.png" alt="">
+                                    <img src="Images/Stardew-Valley.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Stardew Valley</h3>
+                                    <p>Stardew Valley é um jogo de simulação de vida na fazenda onde você herda a propriedade de seu avô em uma pequena cidade. O jogo oferece uma experiência aberta, permitindo que os jogadores cultivem a terra, criem animais, explorem minas, participem de eventos sociais e construam relacionamentos com os habitantes locais. Desenvolvido por Eric Barone ao longo de quatro anos, o jogo foi inspirado na série Harvest Moon e recebeu elogios por sua profundidade e charme.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSimulacao4')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="carousel-item">
+                            <div div="ThatsNotMyNeighbor" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Thats-Not-My-Neighbor.png" alt="">
+                                    <img src="Images/Thats-Not-My-Neighbor.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>That's Not My Neighbor</h3>
+                                    <p>Ambientado em 1955, o jogo coloca o jogador no papel de um porteiro em um prédio de apartamentos, onde criaturas conhecidas como doppelgängers tentam se infiltrar disfarçadas de moradores. A missão é identificar e impedir a entrada dessas entidades, analisando documentos e observando comportamentos suspeitos. O jogo combina elementos de simulação de trabalho com uma atmosfera de horror, exigindo atenção aos detalhes e tomada de decisões rápidas.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSimulacao5')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="carousel-item">
+                            <div div="WorldBox" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/WorldBox.png" alt="">
+                                    <img src="Images/WorldBox.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>WorldBox</h3>
+                                    <p>WorldBox é um simulador onde você assume o papel de uma entidade divina, criando e manipulando mundos. Os jogadores podem gerar terrenos, estabelecer civilizações, desencadear desastres naturais e observar o desenvolvimento das sociedades. O jogo oferece uma experiência sandbox rica, permitindo experimentações diversas com as ferramentas divinas disponíveis.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSimulacao6')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="carousel-item">
+                            <div div="Overcooked" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Overcooked.png" alt="">
+                                    <img src="Images/Overcooked.png" alt="">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Overcooked! All You Can Eat</h3>
+                                    <p>Overcooked! All You Can Eat é uma coletânea que reúne Overcooked! e Overcooked! 2, incluindo todos os conteúdos adicionais e melhorias gráficas. O jogo desafia os jogadores a cooperarem em cozinhas caóticas para preparar pedidos dentro do tempo limite, enfrentando obstáculos e desafios variados.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSimulacao7')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -315,10 +553,30 @@
                     <p>Informações adicionais sobre o Jogo 3.</p>
                     <button class="btn btn-secondary" onclick="hideDetails('detailsSimulacao3')">Fechar</button>
                 </div>
+                <div id="detailsSimulacao4" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 4</h3>
+                    <p>Informações adicionais sobre o Jogo 4.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsSimulacao4')">Fechar</button>
+                </div>
+                <div id="detailsSimulacao5" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 5</h3>
+                    <p>Informações adicionais sobre o Jogo 5.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsSimulacao5')">Fechar</button>
+                </div>
+                <div id="detailsSimulacao6" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 6</h3>
+                    <p>Informações adicionais sobre o Jogo 6.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsSimulacao6')">Fechar</button>
+                </div>
+                <div id="detailsSimulacao7" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 7</h3>
+                    <p>Informações adicionais sobre o Jogo 7.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsSimulacao7')">Fechar</button>
+                </div>
             </div>
         
             <!-- Categoria 4: Terror -->
-            <div class="jogo4">
+            <div class="jogo1">
                 <h1>Terror</h1>
                 <div id="carouselTerror" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicadores -->
@@ -326,32 +584,95 @@
                         <button type="button" data-bs-target="#carouselTerror" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#carouselTerror" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselTerror" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselTerror" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselTerror" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselTerror" data-bs-slide-to="5"></button>
                     </div>
         
                     <!-- Carrossel -->
                     <div class="carousel-inner">
                         <!-- Card 1 -->
                         <div class="carousel-item active">
-                            <div class="card text-center">
-                                <h3>Jogo 1</h3>
-                                <p>Descrição breve do Jogo 1</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsTerror1')">Ver Mais</button>
+                            <div id="Bendy" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Bendy-and-the-Ink-Machine.png" alt="Capa_Jogo">
+                                    <img src="Images/Bendy-and-the-Ink-Machine.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Bendy And The Ink Machine</h3>
+                                    <p>Você joga como Henry Stein, um animador aposentado que retorna ao antigo estúdio de animação, Joey Drew Studios, após receber um convite misterioso. Ao chegar, descobre que o local está tomado por forças sobrenaturais, com personagens de desenhos animados ganhando vida de forma sinistra. O jogo combina exploração, resolução de enigmas e combate em primeira pessoa, com uma estética inspirada nos desenhos animados dos anos 1920 a 1940.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsTerror1')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 2</h3>
-                                <p>Descrição breve do Jogo 2</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsTerror2')">Ver Mais</button>
+                            <div id="FNAF" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/FNAF.png" alt="Capa_Jogo">
+                                    <img src="Images/FNAF.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Five Nights At Freddy's</h3>
+                                    <p>No papel de Mike Schmidt, um segurança noturno, você deve sobreviver cinco noites na pizzaria Freddy Fazbear's Pizza, onde animatrônicos ganham vida e se tornam hostis após o expediente. O jogador deve monitorar câmeras de segurança e gerenciar recursos limitados, como energia elétrica, para evitar encontros fatais com os animatrônicos. O jogo é conhecido por sua atmosfera tensa e mecânicas simples, mas eficazes.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsTerror2')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 3</h3>
-                                <p>Descrição breve do Jogo 3</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsTerror3')">Ver Mais</button>
+                            <div id="LittleNightmares" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Little-Nightmares.png" alt="Capa_Jogo">
+                                    <img src="Images/Little-Nightmares.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Little Nightmares</h3>
+                                    <p>Você assume o papel de Six, uma menina de nove anos vestida com uma capa de chuva amarela, que deve escapar do Maw, um vasto navio submerso habitado por criaturas monstruosas e distorcidas. O jogo combina elementos de plataforma e quebra-cabeças, com uma atmosfera sombria e opressiva, explorando temas como fome, medo e sobrevivência.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsTerror3')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="carousel-item">
+                            <div id="PoppyPlaytime" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Poppy-Playtime.png" alt="Capa_Jogo">
+                                    <img src="Images/Poppy-Playtime.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Poppy Playtime</h3>
+                                    <p>Poppy Playtime é um jogo de terror episódico em que o jogador explora uma fábrica de brinquedos abandonada, enfrentando criaturas assustadoras e resolvendo enigmas para desvendar os mistérios do local. Cada capítulo introduz novos desafios e elementos de narrativa, mantendo uma atmosfera tensa e envolvente.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsTerror4')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="carousel-item">
+                            <div id="Amnesia" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Amnesia-the-Dark-Descent.png" alt="Capa_Jogo">
+                                    <img src="Images/Amnesia-the-Dark-Descent.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Amnesia: The Dark Descent</h3>
+                                    <p>Você joga como Daniel, que acorda sem memória no castelo de Brennenburg, na Prússia. Enquanto explora os corredores escuros do castelo, deve evitar monstros e eventos perturbadores, mantendo sua sanidade. O jogo é conhecido por sua atmosfera tensa, mecânicas de sanidade e ausência de combate direto, focando na sobrevivência e resolução de enigmas.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsTerror5')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="carousel-item">
+                            <div id="Omori" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Omori.png" alt="Capa_Jogo">
+                                    <img src="Images/Omori.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Omori</h3>
+                                    <p>Omori é um RPG de terror psicológico que segue Sunny, um adolescente introspectivo, e seu alter ego Omori, enquanto exploram mundos reais e imaginários. O jogo aborda temas profundos como ansiedade, depressão e trauma, utilizando um sistema de combate baseado em emoções. Com uma estética que mistura pixel art e desenhos feitos à mão, Omori oferece uma experiência emocionalmente intensa e única.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsTerror6')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -383,10 +704,25 @@
                     <p>Informações adicionais sobre o Jogo 3.</p>
                     <button class="btn btn-secondary" onclick="hideDetails('detailsTerror3')">Fechar</button>
                 </div>
+                <div id="detailsTerror4" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 4</h3>
+                    <p>Informações adicionais sobre o Jogo 4.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsTerror4')">Fechar</button>
+                </div>
+                <div id="detailsTerror5" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 5</h3>
+                    <p>Informações adicionais sobre o Jogo 5.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsTerror5')">Fechar</button>
+                </div>
+                <div id="detailsTerror6" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 6</h3>
+                    <p>Informações adicionais sobre o Jogo 6.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsTerror6')">Fechar</button>
+                </div>
             </div>
 
             <!-- Categoria 5: Sobrevivência -->
-            <div class="jogo5">
+            <div class="jogo1">
                 <h1>Sobrevivência</h1>
                 <div id="carouselSobrevivencia" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicadores -->
@@ -394,32 +730,80 @@
                         <button type="button" data-bs-target="#carouselSobrevivencia" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#carouselSobrevivencia" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselSobrevivencia" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselSobrevivencia" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselSobrevivencia" data-bs-slide-to="4"></button>
                     </div>
         
                     <!-- Carrossel -->
                     <div class="carousel-inner">
                         <!-- Card 1 -->
                         <div class="carousel-item active">
-                            <div class="card text-center">
-                                <h3>Jogo 1</h3>
-                                <p>Descrição breve do Jogo 1</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia1')">Ver Mais</button>
+                            <div id="Darkwood" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Darkwood.png" alt="Capa_Jogo">
+                                    <img src="Images/Darkwood.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Darkwood</h3>
+                                    <p>Ambientado em uma floresta misteriosa na Polônia soviética dos anos 1980, você assume o papel de um personagem preso em uma região isolada, infestada por criaturas sobrenaturais e uma vegetação que parece ter vida própria. O jogo apresenta uma perspectiva de cima para baixo, com exploração durante o dia e defesa do abrigo à noite contra invasores. Com elementos de crafting, narrativa ramificada e atmosfera opressiva, Darkwood oferece uma experiência de terror sem sustos fáceis, focando no medo psicológico.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia1')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 2</h3>
-                                <p>Descrição breve do Jogo 2</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia2')">Ver Mais</button>
+                            <div id="DontStarveTogether" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Dont-Starve-Together.png" alt="Capa_Jogo">
+                                    <img src="Images/Dont-Starve-Together.png" alt="Gamepla_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Don't Starve Together</h3>
+                                    <p> Revisar sobre </p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia2')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 3</h3>
-                                <p>Descrição breve do Jogo 3</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia3')">Ver Mais</button>
+                            <div id="ProjectZomboid" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Project-Zomboid.png" alt="Capa_Jogo">
+                                    <img src="Images/Project-Zomboid.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Project Zomboid</h3>
+                                    <p>Project Zomboid é um jogo de sobrevivência em mundo aberto ambientado em um apocalipse zumbi nos anos 1990. Os jogadores devem gerenciar fome, sede, sono e saúde mental enquanto exploram, constroem abrigos e enfrentam hordas de zumbis. O jogo oferece modos solo e multijogador, com um sistema de progressão de habilidades e uma ênfase na sobrevivência realista.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia3')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="carousel-item">
+                            <div id="Terraria" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Terraria-Banner.png" alt="Capa_Jogo">
+                                    <img src="Images/Terraria-Banner.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Terraria</h3>
+                                    <p>Terraria é um jogo de ação e aventura em 2D com elementos de sandbox, onde os jogadores exploram, constroem, mineram e combatem em um mundo gerado proceduralmente. Com uma vasta gama de itens, inimigos e biomas, o jogo oferece uma experiência rica em exploração e personalização.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia4')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="carousel-item">
+                            <div id="Subnautica" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Subnautica.png" alt="Capa_Jogo">
+                                    <img src="Images/Subnautica.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Subnautica</h3>
+                                    <p>Subnautica é um jogo de sobrevivência em mundo aberto ambientado em um planeta oceânico alienígena. Após um acidente espacial, o jogador deve explorar as profundezas do oceano, coletar recursos, construir bases subaquáticas e desvendar os mistérios do planeta, tudo enquanto gerencia sua sobrevivência contra criaturas perigosas e ambientes hostis.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsSobrevivencia5')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -451,10 +835,20 @@
                     <p>Informações adicionais sobre o Jogo 3.</p>
                     <button class="btn btn-secondary" onclick="hideDetails('detailsSobrevivencia3')">Fechar</button>
                 </div>
+                <div id="detailsSobrevivencia4" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 4</h3>
+                    <p>Informações adicionais sobre o Jogo 4.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsSobrevivencia4')">Fechar</button>
+                </div>
+                <div id="detailsSobrevivencia5" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 5</h3>
+                    <p>Informações adicionais sobre o Jogo 5.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsSobrevivencia5')">Fechar</button>
+                </div>
             </div>
 
-            <!-- Categoria 2: Metroidvania -->
-            <div class="jogo6">
+            <!-- Categoria 6: Metroidvania -->
+            <div class="jogo1">
                 <h1>Metroidvania</h1>
                 <div id="carouselMetroidvania" class="carousel slide" data-bs-ride="carousel">
                     <!-- Indicadores -->
@@ -462,32 +856,125 @@
                         <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="5"></button>
+                        <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="6"></button>
+                        <button type="button" data-bs-target="#carouselMetroidvania" data-bs-slide-to="7"></button>
                     </div>
         
                     <!-- Carrossel -->
                     <div class="carousel-inner">
                         <!-- Card 1 -->
                         <div class="carousel-item active">
-                            <div class="card text-center">
-                                <h3>Jogo 1</h3>
-                                <p>Descrição breve do Jogo 1</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania1')">Ver Mais</button>
+                            <div id="Blasphemous" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Blasphemous-Banner.webp" alt="Capa_Jogo">
+                                    <img src="Images/Blasphemous-Banner.webp" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Blasphemous</h3>
+                                    <p>Blasphemous é um jogo de ação e plataforma em 2D com elementos de Metroidvania, ambientado em um mundo sombrio e religioso chamado Cvstodia. Os jogadores assumem o papel do Penitente, enfrentando inimigos grotescos e explorando um mundo interconectado, repleto de segredos e desafios. O jogo é conhecido por sua arte detalhada e atmosfera opressiva.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania1')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 2 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 2</h3>
-                                <p>Descrição breve do Jogo 2</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania2')">Ver Mais</button>
+                            <div id="BloodyHell" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Bloody-Hell.png" alt="Capa_Jogo">
+                                    <img src="Images/Bloody-Hell.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Bloody Hell</h3>
+                                    <p>Bloody Hell é um jogo de ação e aventura com elementos de bullet hell e metroidvania, onde o jogador assume o papel de um anjo em uma missão sangrenta para derrotar Satanás. Com gráficos em pixel art e jogabilidade desafiadora, o jogo combina humor e combate intenso em um mundo infernal.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania2')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                         <!-- Card 3 -->
                         <div class="carousel-item">
-                            <div class="card text-center">
-                                <h3>Jogo 3</h3>
-                                <p>Descrição breve do Jogo 3</p>
-                                <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania3')">Ver Mais</button>
+                            <div id="HollowKnight" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Hollow-Knight-Banner.jpg" alt="Capa_Jogo">
+                                    <img src="Images/Hollow-Knight-Banner.jpg" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Hollow Knight</h3>
+                                    <p>Hollow Knight é um jogo de ação e aventura em 2D com estilo Metroidvania, ambientado no vasto mundo subterrâneo de Hallownest. Os jogadores exploram cavernas, cidades e ruínas, enfrentando inimigos e descobrindo segredos enquanto desvendam a história do reino. O jogo é conhecido por sua arte desenhada à mão, trilha sonora envolvente e jogabilidade desafiadora.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania3')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="carousel-item">
+                            <div id="NineSols" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Nine-Sols.png" alt="Capa_Jogo">
+                                    <img src="Images/Nine-Sols.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Nine Sols</h3>
+                                    <p>Nine Sols é um jogo de ação e plataforma em 2D com estilo visual desenhado à mão, ambientado em um mundo futurista inspirado na mitologia asiática. Os jogadores enfrentam inimigos desafiadores, utilizando mecânicas de combate baseadas em deflexão de ataques para acumular energia e realizar ataques especiais. O jogo combina elementos de Taoismo com cyberpunk, criando uma experiência única e imersiva.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania4')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="carousel-item">
+                            <div id="SaltAndSanctuary" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Salt-and-Sanctuary.png" alt="Capa_Jogo">
+                                    <img src="Images/Salt-and-Sanctuary.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Salt And Sanctuary</h3>
+                                    <p>Salt and Sanctuary é um jogo de ação-RPG em 2D que combina elementos de plataforma com combate desafiador, inspirado na série Dark Souls. Os jogadores exploram um mundo sombrio e interconectado, enfrentando inimigos formidáveis e descobrindo segredos ocultos.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania5')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="carousel-item">
+                            <div id="TitanSouls" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Titan-Souls.png" alt="Capa_Jogo">
+                                    <img src="Images/Titan-Souls.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Titan Souls</h3>
+                                    <p>Titan Souls é um jogo de ação e aventura em 2D com perspectiva top-down, onde o jogador enfrenta titãs gigantes em batalhas desafiadoras. Armado com apenas uma flecha, o protagonista deve descobrir as fraquezas de cada titã e derrotá-los em combates que exigem precisão e estratégia. O jogo é conhecido por sua dificuldade elevada e design minimalista.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania6')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="carousel-item">
+                            <div id="DeadCells" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Dead-Cells.png" alt="Capa_Jogo">
+                                    <img src="Images/Dead-Cells.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Dead Cells</h3>
+                                    <p>Dead Cells é um jogo de ação e plataforma com elementos roguelike, onde os jogadores exploram um castelo em constante mudança, enfrentando inimigos desafiadores e coletando armas e habilidades. A jogabilidade é rápida e fluida, com combates intensos e uma variedade de caminhos a seguir.</p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania7')">Ver Mais</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="carousel-item">
+                            <div id="CaveStory" class="card text-center">
+                                <div class="arquivos">
+                                    <img src="Images/Cave-Story.png" alt="Capa_Jogo">
+                                    <img src="Images/Cave-Story.png" alt="Gameplay_Jogo">
+                                </div>
+                                <div class="jogo-text">
+                                    <h3>Cave Story</h3>
+                                    <p> Revisar sobre(não foi gerado texto sobre sua descrição) </p>
+                                    <button class="btn btn-primary" onclick="showDetails('detailsMetroidvania8')">Ver Mais</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -518,6 +1005,31 @@
                     <h3>Detalhes do Jogo 3</h3>
                     <p>Informações adicionais sobre o Jogo 3.</p>
                     <button class="btn btn-secondary" onclick="hideDetails('detailsMetroidvania3')">Fechar</button>
+                </div>
+                <div id="detailsMetroidvania4" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 4</h3>
+                    <p>Informações adicionais sobre o Jogo 4.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsMetroidvania4')">Fechar</button>
+                </div>
+                <div id="detailsMetroidvania5" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 5</h3>
+                    <p>Informações adicionais sobre o Jogo 5.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsMetroidvania5')">Fechar</button>
+                </div>
+                <div id="detailsMetroidvania6" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 6</h3>
+                    <p>Informações adicionais sobre o Jogo 6.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsMetroidvania6')">Fechar</button>
+                </div>
+                <div id="detailsMetroidvania7" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 7</h3>
+                    <p>Informações adicionais sobre o Jogo 7.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsMetroidvania7')">Fechar</button>
+                </div>
+                <div id="detailsMetroidvania8" class="details" style="display: none;">
+                    <h3>Detalhes do Jogo 8</h3>
+                    <p>Informações adicionais sobre o Jogo 8.</p>
+                    <button class="btn btn-secondary" onclick="hideDetails('detailsMetroidvania8')">Fechar</button>
                 </div>
             </div>
 

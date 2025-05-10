@@ -7,6 +7,14 @@
     top: 0;
 }
 
+/* Define a proporção padrão de 16:12 para todas as imagens */
+img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 12;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+}
+
 /* estilização dos menus 1 e 2 */
 
 .menu1, .menu2 {
@@ -14,25 +22,27 @@
     width: 100%;
     background-color: rgb(34,40,49);
     z-index: 1000;
-    display: flex;
-    align-items: center;
 }
 .menu2 {
     transition: transform 0.2s ease-in-out;
     transform: translateY(-100%); /* invisível */
-    height: 35px;
-    background-color: rgb(2, 47, 116);
+    height: 40px;
+    display: flex;
+    background-color: rgb(34,40,49);
 }
 .menu1 {
     transition: transform 0.2s ease-in-out;
     transform: translateY(0); /* visível */
     height: 80px;
+    display: flex;
 }
 .menu1 img{
     background-color: red;
     width: 100px;
     height: 80%;
-    margin-left: 5%;
+    margin-left: 10%;
+    margin-right: -15%;
+    margin-top: 8px
 }
 
 /*lista dos menus*/
@@ -40,10 +50,20 @@
 .menu1 ul, .menu2 ul{
     color: rgb(238,238,238);
     width: 100%;
+    height: 100%;
     list-style: none;
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 13%;
+}
+.menu2 ul{
+    margin-left: 10%;
+    margin-right: 13%;
+}
+.menu1 ul{
+    margin-right: 10%;
 }
 .menu1 ul a, .menu2 ul a{
     text-decoration: none;
@@ -51,33 +71,22 @@
     font-size: 12px;
     font-family: 'Press Start 2P', cursive;
     transition: all 0.2s ease-in-out;
-    display: flex;
-    align-items: center;
 }
-
 .menu1 ul a:hover, .menu2 ul a:hover{
     color: rgb(230, 138, 85);
     font-size: 15px;
 }
-
-.repor{
-    background-color: rgb(2, 47, 116);
-    width: 100%;
-    height: 80px;
-}
 /* estilização da página como um todo */
 
 .geral{
-    background-color: seagreen; /*temporário*/
+    background-color: rgb(24, 101, 150); /*temporário*/
     width: 100%;
     height: 5000px;
 }
 
 /* estilização do destaque */
 .destaque{
-    background-color: blue;
     width: 100%;
-    height: 20%;
     display: flex;
     justify-content: center;
 }
@@ -90,12 +99,19 @@
 }
 .destaques{
     margin-top: 90px;
-    width: 90%;
+    width: 85%;
+    margin-bottom: 3%;
 }
 .destaques .carousel-indicators{ /*altera a altura das bolinhas que indicam as imagens*/
-    margin-top: 57%;
+    margin-top: 50%;
 }
 .carousel-inner{ /*altera borda das imagens*/
+    border-radius: 10px;
+}
+#demo img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 8; /* Proporção 16:8 */
     border-radius: 10px;
 }
     
@@ -145,18 +161,17 @@
 
 /* estilização de jogos*/
 .jogos{
-    background-color: orange;
     width: 100%;
-    height: 20%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-
 .details {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    max-width: 600px;
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
     max-height: 80%; /* Limita a altura da div a 80% da tela */
     background-color: rgb(17, 182, 247);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
@@ -171,16 +186,70 @@
     margin-top: 20px;
 }
 .jogos .card{
-    background-color: blue;
+    background-color: rgb(34,40,49);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .jogos h1{
     font-family: 'Press Start 2P', cursive;
     color: rgb(238,238,238);
     font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-
+/*Jogos de Ação*/
+.arquivos {
+    display: flex; /* Ativa o Flexbox */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-around; /* Espaçamento uniforme entre os elementos */
+    gap: 20px; /* Espaçamento opcional entre os elementos */
+    margin-top: 15px;
+}
+.arquivos img{
+    width: 40%;
+    height: auto;
+    aspect-ratio: 16 / 8; /*Proporção 16:8*/
+    border-radius: 5px;
+}
+.arquivos iframe{
+    width: 40%;
+    height: auto;
+    aspect-ratio: 16 / 8; /*Proporção 16:8*/
+    border-radius: 5px;
+}
+.jogo-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: rgb(238,238,238);
+}
+.jogo-text p {
+    text-indent: 2em; /* Recuo no início do parágrafo */
+    text-align: justify;
+}
+.jogo-text button{
+    width: 40%;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease; /* Efeito de transição */
+    z-index: 10; /* Garante que o botão esteja acima de outros elementos */
+    align-self: center;
+    margin-bottom: 15px;
+    border: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+.jogo-text button:hover {
+    background-color: rgb(24, 101, 150); /* Cor ao passar o mouse */
+    color: rgb(230, 138, 85);
+    font-size: 14px;
+    
+}
 /* estilização de criadores*/
 
 .criadores{
